@@ -23,7 +23,7 @@ public partial class ViewStatePage : System.Web.UI.Page
         this.Label2.Text += "~Init~";
     }
 
-    protected void Page_Prefender(object sender, EventArgs e)
+    protected void Page_Prerender(object sender, EventArgs e)
     {
         this.Label2.Text += "~Prefender~";
     }

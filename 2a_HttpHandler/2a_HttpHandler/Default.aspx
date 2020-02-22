@@ -9,10 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <p>Yan Pershay</p>
-            <b>Borisovich</b>
-        </div>
+        <asp:Button ID="GetButton" runat="server" OnClick="GetButton_Click" Text="GET" Height="24px" Width="81px" />
+        <asp:Button ID="PostButton" runat="server" OnClick="PostButton_Click" Text="POST" Height="24px" Width="81px" />
+        <asp:Button ID="PutButton" runat="server" OnClick="PutButton_Click" Text="PUT" Height="24px" Width="81px" />
     </form>
 </body>
 </html>
