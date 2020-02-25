@@ -18,7 +18,7 @@ public class GetHttpHandler : IHttpHandler
 
     public void ProcessRequest(HttpContext context)
     {
-        if(HttpContext.Current.Items["PYBN"] != null)
+        if (HttpContext.Current.Items["PYBN"] != null)
         {
             context.Response.Write("GET-HTTP-PYB:Name=" +
                 HttpContext.Current.Items["PYBN"]);

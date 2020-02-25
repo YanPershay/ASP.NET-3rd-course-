@@ -44,4 +44,23 @@ public partial class _Default : System.Web.UI.Page
         StreamReader rdr = new StreamReader(rs.GetResponseStream());
         Response.Write(rdr.ReadToEnd());
     }
+
+    protected void Get403_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            HttpWebRequest rq = (HttpWebRequest)HttpWebRequest.Create("http://localhost:53839/forbidden.pyb");
+            rq.Method = "GET";
+            HttpWebResponse rs = (HttpWebResponse)rq.GetResponse();
+            StreamReader rdr = new StreamReader(rs.GetResponseStream());
+            Response.Write(rdr.ReadToEnd());
+        }
+        catch (WebException we)
+        {
+            Response.Write(we.Status);
+            Response.Write("<br/>" + we.Message);
+            Response.Write("<br/>" + we.TargetSite);
+            Response.Write("<br/>" + we.Source);
+        }
+    }
 }
