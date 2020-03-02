@@ -71,6 +71,11 @@
             <asp:Label ID="lblResponse" runat="server" text="X + Y = " Font-Bold="True" Font-Names="Verdana" Font-Size="Small">
             </asp:Label>
         </div>
+        <%--<p>-----------------------------------------------------------------------------------------------------------------</p>
+        <asp:Button ID="Buttonget" runat="server" OnClick="GetQueryButton_Click" Text="GET" Height="24px" Width="81px" />
+        <asp:Button ID="Button1" runat="server" OnClick="PostQueryButton_Click" Text="POST" Height="24px" Width="81px" />
+        <asp:Button ID="Button2" runat="server" OnClick="PutQueryButton_Click" Text="PUT" Height="24px" Width="81px" />--%>
+
     </form>
 </body>
 </html>

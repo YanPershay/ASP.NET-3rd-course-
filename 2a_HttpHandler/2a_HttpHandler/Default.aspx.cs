@@ -19,8 +19,8 @@ public partial class _Default : System.Web.UI.Page
         HttpWebRequest rq = (HttpWebRequest)HttpWebRequest.Create("http://localhost:53839/get.pyb");
         rq.Method = "GET";
         HttpWebResponse rs = (HttpWebResponse)rq.GetResponse();
-        StreamReader rdr = new StreamReader(rs.GetResponseStream());
-        Response.Write(rdr.ReadToEnd());
+        StreamReader reader = new StreamReader(rs.GetResponseStream());
+        Response.Write(reader.ReadToEnd());
     }
 
     protected void PostButton_Click(object sender, EventArgs e)
@@ -52,8 +52,8 @@ public partial class _Default : System.Web.UI.Page
             HttpWebRequest rq = (HttpWebRequest)HttpWebRequest.Create("http://localhost:53839/forbidden.pyb");
             rq.Method = "GET";
             HttpWebResponse rs = (HttpWebResponse)rq.GetResponse();
-            StreamReader rdr = new StreamReader(rs.GetResponseStream());
-            Response.Write(rdr.ReadToEnd());
+            StreamReader reader = new StreamReader(rs.GetResponseStream());
+            Response.Write(reader.ReadToEnd());
         }
         catch (WebException we)
         {
