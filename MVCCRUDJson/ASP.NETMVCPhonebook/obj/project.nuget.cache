@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "y3zT/KVXmnobnWMCd/xuNLdD0SH/jkwHOEbuN9/PJpTIpGI3lhkM8mwYMgeVEGL9gxOjvZkwPSI0ky8HpxrGkA==",
+  "dgSpecHash": "lZUlqQ7z3muLSwlD7ruGKo8ezYA0Twhb/kup2opLdc69t4KmltwBHEkThFr7ENi0FPe0milPWgvKwKSdCLeEDQ==",
   "success": true,
-  "projectFilePath": "D:\\ASP.NET\\ASP.NETMVCPhonebook\\ASP.NETMVCPhonebook\\ASP.NETMVCPhonebook.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\ASP.NET\\MVCCRUDJson\\ASP.NETMVCPhonebook\\ASP.NETMVCPhonebook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ypershay\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
